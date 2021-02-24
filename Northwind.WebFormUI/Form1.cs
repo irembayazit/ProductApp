@@ -1,4 +1,5 @@
-﻿using Northwind.Business.Abstract;
+﻿using Entitites.Concrete;
+using Northwind.Business.Abstract;
 using Northwind.Business.Concrete;
 using Northwind.DataAccess.Concrete.EntityFramework;
 using Northwind.DataAccess.Concrete.NHibernate;
@@ -25,7 +26,7 @@ namespace Northwind.WebFormUI
         }
         private IProductService _productService;
         private ICategoryService _categoryService;
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)//Proje calıştırıldıgına yuklu gelir
         {
             LoadProducts();
             LoadCategories();
@@ -36,6 +37,10 @@ namespace Northwind.WebFormUI
             cbxCategory.DataSource = _categoryService.GetAll();
             cbxCategory.DisplayMember = "CategoryName";
             cbxCategory.ValueMember = "CategoryId";
+
+            cbxCategoryId.DataSource = _categoryService.GetAll();
+            cbxCategoryId.DisplayMember = "CategoryName";
+            cbxCategoryId.ValueMember = "CategoryId";
         }
 
         private void LoadProducts()
@@ -68,6 +73,42 @@ namespace Northwind.WebFormUI
             {
 
             }
+        }
+
+        private void tbtxProductName_TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(tbtxProductName.Text))
+            {
+                dgwProduct.DataSource = _productService.GetProductsByProductName(tbtxProductName.Text);
+            }
+            else
+            {
+                LoadProducts();
+            }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            _productService.Add(new Product
+            {
+                CategoryID = Convert.ToInt32(cbxCategoryId.SelectedValue),
+                ProductName = tbxProductName2.Text,
+                QuantityPerUnit = tbxQuantityPerUnit.Text,
+                UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text),
+                UnitsInStock = Convert.ToInt16(tbxStock.Text)
+            });
+            MessageBox.Show("Ürün kaydedildi!");
+            LoadProducts();
         }
     }
 }

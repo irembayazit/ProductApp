@@ -26,3 +26,17 @@ C:\Users\İrem\Source\Repos\BTK C#\NLAyeredAppDemo_BTK\Northwind.Business\obj\De
 C:\Users\İrem\Source\Repos\BTK C#\NLAyeredAppDemo_BTK\Northwind.Business\obj\Debug\Northwind.Business.csproj.CopyComplete
 C:\Users\İrem\Source\Repos\BTK C#\NLAyeredAppDemo_BTK\Northwind.Business\obj\Debug\Northwind.Business.dll
 C:\Users\İrem\Source\Repos\BTK C#\NLAyeredAppDemo_BTK\Northwind.Business\obj\Debug\Northwind.Business.pdb
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Northwind.Business.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Northwind.Business.pdb
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Entitites.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Northwind.DataAccess.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\EntityFramework.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Entitites.pdb
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Northwind.DataAccess.pdb
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Northwind.DataAccess.dll.config
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\EntityFramework.xml
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\Northwind.Business.csprojAssemblyReference.cache
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\Northwind.Business.csproj.CoreCompileInputs.cache
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\Northwind.Business.csproj.CopyComplete
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\Northwind.Business.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\Northwind.Business.pdb
