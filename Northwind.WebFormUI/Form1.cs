@@ -1,6 +1,7 @@
 ﻿using Entitites.Concrete;
 using Northwind.Business.Abstract;
 using Northwind.Business.Concrete;
+using Northwind.Business.DependencyResolvers.Ninject;
 using Northwind.DataAccess.Concrete.EntityFramework;
 using Northwind.DataAccess.Concrete.NHibernate;
 using System;
@@ -21,8 +22,8 @@ namespace Northwind.WebFormUI
         public Form1()
         {
             InitializeComponent();
-            _productService = new ProductManager(new EfProductDal());
-            _categoryService = new CategoryManager(new EfCategoryDal());
+            _productService = InstanceFactory.GetInstance<IProductService>();
+            _categoryService = InstanceFactory.GetInstance<ICategoryService>();
         }
         private IProductService _productService;
         private ICategoryService _categoryService;
@@ -41,6 +42,10 @@ namespace Northwind.WebFormUI
             cbxCategoryId.DataSource = _categoryService.GetAll();
             cbxCategoryId.DisplayMember = "CategoryName";
             cbxCategoryId.ValueMember = "CategoryId";
+
+            cbxCategoryIdUpdate.DataSource = _categoryService.GetAll();
+            cbxCategoryIdUpdate.DisplayMember = "CategoryName";
+            cbxCategoryIdUpdate.ValueMember = "CategoryId";
         }
 
         private void LoadProducts()
@@ -99,16 +104,72 @@ namespace Northwind.WebFormUI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            _productService.Add(new Product
+            try
             {
-                CategoryID = Convert.ToInt32(cbxCategoryId.SelectedValue),
-                ProductName = tbxProductName2.Text,
-                QuantityPerUnit = tbxQuantityPerUnit.Text,
-                UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text),
-                UnitsInStock = Convert.ToInt16(tbxStock.Text)
-            });
-            MessageBox.Show("Ürün kaydedildi!");
+                _productService.Add(new Product
+                {
+                    CategoryId = Convert.ToInt32(cbxCategoryId.SelectedValue),
+                    ProductName = tbxProductName2.Text,
+                    QuantityPerUnit = tbxQuantityPerUnit.Text,
+                    UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text),
+                    UnitsInStock = Convert.ToInt16(tbxStock.Text)
+                });
+                MessageBox.Show("Ürün eklendi!");
+                LoadProducts();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+            
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            _productService.Update(new Product
+            {
+                ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value),//ilk sutun olan productId degerlerini yazar
+                ProductName = tbxUpdateProductName.Text,
+                CategoryId = Convert.ToInt32(cbxCategoryIdUpdate.SelectedValue),
+                QuantityPerUnit = tbxQuantityPerUnitUpdate.Text,
+                UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text),
+                UnitsInStock = Convert.ToInt16(tbxUnitsInStockUpdate.Text)
+
+            }); 
+            MessageBox.Show("Ürün güncellendi!");
             LoadProducts();
+        }
+
+        private void dgwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dgwProduct.CurrentRow;
+            tbxUpdateProductName.Text = row.Cells[2].Value.ToString();
+            cbxCategoryIdUpdate.SelectedValue = row.Cells[1].Value;
+            tbxUnitPriceUpdate.Text = row.Cells[3].Value.ToString();
+            tbxQuantityPerUnitUpdate.Text = row.Cells[4].Value.ToString();
+            tbxUnitsInStockUpdate.Text = row.Cells[5].Value.ToString();
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _productService.Delete(new Product
+                {
+                    ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value)
+                });
+                MessageBox.Show("Ürün silindi!");
+                LoadProducts();
+            }
+            catch(Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }       
         }
     }
 }

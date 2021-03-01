@@ -40,3 +40,10 @@ C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\North
 C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\Northwind.Business.csproj.CopyComplete
 C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\Northwind.Business.dll
 C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\obj\Debug\Northwind.Business.pdb
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Northwind.Business.dll.config
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\FluentValidation.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\FluentValidation.xml
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Ninject.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.Business\bin\Debug\Ninject.xml

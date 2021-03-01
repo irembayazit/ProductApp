@@ -10,3 +10,9 @@ C:\Users\İrem\Source\Repos\BTK C#\NLAyeredAppDemo_BTK\Entitites\obj\Debug\North
 C:\Users\İrem\Source\Repos\BTK C#\NLAyeredAppDemo_BTK\Entitites\obj\Debug\Northwind.Entitites.csproj.CoreCompileInputs.cache
 C:\Users\İrem\Source\Repos\BTK C#\NLAyeredAppDemo_BTK\Entitites\obj\Debug\Entitites.dll
 C:\Users\İrem\Source\Repos\BTK C#\NLAyeredAppDemo_BTK\Entitites\obj\Debug\Entitites.pdb
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Entitites\bin\Debug\Entitites.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Entitites\bin\Debug\Entitites.pdb
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Entitites\obj\Debug\Northwind.Entitites.csprojAssemblyReference.cache
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Entitites\obj\Debug\Northwind.Entitites.csproj.CoreCompileInputs.cache
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Entitites\obj\Debug\Entitites.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Entitites\obj\Debug\Entitites.pdb

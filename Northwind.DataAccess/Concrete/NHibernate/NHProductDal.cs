@@ -33,8 +33,8 @@ namespace Northwind.DataAccess.Concrete.NHibernate
             {
                 new Product
                 {
-                    CategoryID =1,
-                    ProductID =1,
+                    CategoryId =1,
+                    ProductId =1,
                     ProductName="Lapptop",
                     QuantityPerUnit = "1 in a box",
                     UnitPrice =3000,

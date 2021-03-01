@@ -62,3 +62,8 @@ C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\obj\Debug\Nort
 C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\obj\Debug\Northwind.WebFormUI.csproj.CopyComplete
 C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\obj\Debug\Northwind.WebFormUI.exe
 C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\obj\Debug\Northwind.WebFormUI.pdb
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\bin\Debug\Northwind.Business.dll.config
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\bin\Debug\FluentValidation.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\bin\Debug\FluentValidation.xml
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\bin\Debug\Ninject.dll
+C:\Users\İrem\Source\Repos\BTK C#\ProductApp\Northwind.WebFormUI\bin\Debug\Ninject.xml
